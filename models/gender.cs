@@ -1,10 +1,10 @@
 namespace superheores.models
 {
-public class colour
+public class gender
 {
     public Guid id {get; set;}
 
-    public string colour_name {get; set;}
+    public string gender_name {get; set;}
 }
 
 }
