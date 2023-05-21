@@ -21,15 +21,15 @@ namespace superheores.Service
 
         public IEnumerable<gender> Get()
         {
-            return context.gender;
+            return context.genders;
         }
 
         public async Task Update(Guid id, gender updgender)
         {
-            var gender = context.gender.Find(id);
+            var gender = context.genders.Find(id);
             if (gender != null)
             {
-                gender gender_name = updgender.gender_name;
+                gender gender_name = gender_name;
                 context.Update(gender);
                 await context.SaveChangesAsync();
             }

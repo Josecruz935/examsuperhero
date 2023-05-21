@@ -11,6 +11,9 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddSqlServer<context>("Data Source=localhost; Initial Catalog=libreriaDB;user id=sa;password=Programaci0n$;Encrypt=False");
 builder.Services.AddScoped<IcolourService, colourService>();
+builder.Services.AddScoped<IgenderService, genderService>();
+builder.Services.AddScoped<IpublisherService, publisherService>();
+
 
 var app = builder.Build();
 

@@ -7,7 +7,7 @@ namespace superheores
     {
        public DbSet<colour> colour {get;set;}   
        public DbSet<gender> genders {get;set;}
-
+        public object publisher { get; internal set; }
 
         public context(DbContextOptions<context> options) : base(options){}
 
